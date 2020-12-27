@@ -10,8 +10,15 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 
 public class XMLGenerator {
+    public static void main(String[] args) {
 
-    public void generateXML() throws ParserConfigurationException, TransformerException {
+        try {
+            generateXML();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void generateXML() throws TransformerException {
         String fromDate = "20160801";
         String toDate = "20170731";
         String fromTo = "fromto_" + fromDate + "_" + toDate;
@@ -63,21 +70,26 @@ public class XMLGenerator {
         createXMLFile(document);
     }
 
-    private Document createDocument() throws ParserConfigurationException {
-        return DocumentBuilderFactory
-                .newInstance()
-                .newDocumentBuilder()
-                .newDocument();
+    private static Document createDocument()  {
+        try {
+            return DocumentBuilderFactory
+                    .newInstance()
+                    .newDocumentBuilder()
+                    .newDocument();
+        } catch (ParserConfigurationException e) {
+            throw new RuntimeException("create Doc fail");
+        }
+
     }
 
-    private void createXMLFile(Document document) throws TransformerException {
+    private static void createXMLFile(Document document) throws TransformerException {
         Transformer transformer = createTransformer();
         DOMSource domSource = new DOMSource(document);
-        StreamResult streamResult = new StreamResult(new File("/Users/jammytan/Documents/Account/test.xml"));
+        StreamResult streamResult = new StreamResult(new File("./output/test.xml"));
         transformer.transform(domSource, streamResult);
     }
 
-    private Transformer createTransformer() throws TransformerConfigurationException {
+    private static Transformer createTransformer() throws TransformerConfigurationException {
         Transformer transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
