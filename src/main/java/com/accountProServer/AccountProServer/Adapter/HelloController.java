@@ -1,4 +1,4 @@
-package com.accountProServer.AccountProServer;
+package com.accountProServer.AccountProServer.Adapter;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

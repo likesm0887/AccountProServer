@@ -1,4 +1,4 @@
-package com.accountProServer.AccountProServer;
+package com.accountProServer.AccountProServer.Adapter;
 
 import com.google.common.collect.ImmutableMap;
 import graphql.schema.DataFetcher;

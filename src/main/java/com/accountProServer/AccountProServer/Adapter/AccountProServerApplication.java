@@ -1,4 +1,4 @@
-package com.accountProServer.AccountProServer;
+package com.accountProServer.AccountProServer.Adapter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
