@@ -1,0 +1,88 @@
+package XMLGenerator;
+
+public class Part2NodeTag {
+    static final String CompanyRegistrationNumber = "CompanyRegistrationNumber";
+    static final String NameOfReportingEntity = "NameOfReportingEntity";
+    static final String FormerNameOfCompany = "FormerNameOfCompany";
+    static final String OriginOfCompany = "OriginOfCompany";
+    static final String StatusOfCompany = "StatusOfCompany";
+    static final String TypeOfCompany = "TypeOfCompany";
+    static final String DisclosureOfFinancialStatementsPreparationForCurrentSubmission = "DisclosureOfFinancialStatementsPreparationForCurrentSubmission";
+    static final String CompanyCurrentFinancialYearStartDate = "CompanyCurrentFinancialYearStartDate";
+    static final String CompanyCurrentFinancialYearEndDate = "CompanyCurrentFinancialYearEndDate";
+    static final String CompanyPreviousFinancialYearStartDate = "CompanyPreviousFinancialYearStartDate";
+    static final String CompanyPreviousFinancialYearEndDate = "CompanyPreviousFinancialYearEndDate";
+    static final String StatusOfCarryingOnBusinessDuringFinancialYear = "StatusOfCarryingOnBusinessDuringFinancialYear";
+    static final String DisclosureOfFinancialStatementsAuditStatus = "DisclosureOfFinancialStatementsAuditStatus";
+    static final String BasisOfAccountingStandardsAppliedToPrepareFinancialStatements = "BasisOfAccountingStandardsAppliedToPrepareFinancialStatements";
+    static final String TypeOfSubmission = "TypeOfSubmission";
+    static final String NatureOfFinancialStatements = "NatureOfFinancialStatements";
+    static final String DescriptionOfPresentationCurrency = "DescriptionOfPresentationCurrency";
+    static final String DescriptionOfFunctionalCurrency = "DescriptionOfFunctionalCurrency";
+    static final String LevelOfRoundingUsedInFinancialStatements = "LevelOfRoundingUsedInFinancialStatements";
+    static final String DateOfFinancialStatementsApprovedByBoardOfDirectors = "DateOfFinancialStatementsApprovedByBoardOfDirectors";
+    static final String DateOfCirculationOfFinancialStatementsAndReportsToMembers = "DateOfCirculationOfFinancialStatementsAndReportsToMembers";
+    static final String DateOfFinancialStatementsAndReportsOfDirectorsAndAuditorsLaidInAnnualGeneralMeeting = "ssmt:DateOfFinancialStatementsAndReportsOfDirectorsAndAuditorsLaidInAnnualGeneralMeeting";
+    static final String DateOfStatutoryDeclaration = "DateOfStatutoryDeclaration";
+    static final String DisclosureOnWhetherCompanysSharesAreTradedOnAnyOfficialStockExchange = "DisclosureOnWhetherCompanysSharesAreTradedOnAnyOfficialStockExchange";
+    static final String DisclosureOfRegulationAppliedDuringIncorporationOfCompany = "DisclosureOfRegulationAppliedDuringIncorporationOfCompany";
+    static final String DisclosureOfWhetherCompanyRegulatedByBankNegaraMalaysiaAtFinancialYearEnd = "DisclosureOfWhetherCompanyRegulatedByBankNegaraMalaysiaAtFinancialYearEnd";
+    static final String MSICCode = "MSICCode";
+    static final String DescriptionOfBusiness = "DescriptionOfBusiness";
+    static final String DescriptionOnWhetherCompanyHadAppliedForAnyExemptionWaiverReliefOrExtensionOfTimeWithRegardToAnnualReturnOrFinancialStatementsAndReportsFromRegistrarOrMinister = "DescriptionOnWhetherCompanyHadAppliedForAnyExemptionWaiverReliefOrExtensionOfTimeWithRegardToAnnualReturnOrFinancialStatementsAndReportsFromRegistrarOrMinister";
+    static final String MethodUsedForPreparingStatementOfFinancialPosition = "MethodUsedForPreparingStatementOfFinancialPosition";
+    static final String MethodUsedForPreparingStatementOfProfitOrLoss = "MethodUsedForPreparingStatementOfProfitOrLoss";
+    static final String MethodUsedForPreparingStatementOfComprehensiveIncome = "MethodUsedForPreparingStatementOfComprehensiveIncome";
+    static final String MethodUsedForPreparingStatementOfCashFlows = "MethodUsedForPreparingStatementOfCashFlows";
+    static final String DisclosureOnWhetherComparativePeriodValuesAreRestated = "DisclosureOnWhetherComparativePeriodValuesAreRestated";
+    static final String DisclosureOnWhetherOpeningStatementChangedDueToChangesInAccountingStandards = "DisclosureOnWhetherOpeningStatementChangedDueToChangesInAccountingStandards";
+    static final String DisclosureOnWhetherReclassificationOfPreviousFinancialStatementsChangedDueToChangesInAccountingStandards = "DisclosureOnWhetherReclassificationOfPreviousFinancialStatementsChangedDueToChangesInAccountingStandards";
+    static final String DisclosureOnWhetherCompanyChangedDurationOfFinancialReportingPeriod = "DisclosureOnWhetherCompanyChangedDurationOfFinancialReportingPeriod";
+    static final String DisclosureOfDirectorsReportExplanatory = "DisclosureOfDirectorsReportExplanatory";
+
+    static final String NumberOfDirectorsSigningDirectorsReport = "NumberOfDirectorsSigningDirectorsReport";
+    static final String NameOfFirstDirectorWhoSignedDirectorsReport = "NameOfFirstDirectorWhoSignedDirectorsReport";
+    static final String TypeOfIdentificationOfFirstDirectorWhoSignedDirectorsReport = "TypeOfIdentificationOfFirstDirectorWhoSignedDirectorsReport";
+    static final String IdentificationNumberOfFirstDirectorWhoSignedDirectorsReport = "IdentificationNumberOfFirstDirectorWhoSignedDirectorsReport";
+    static final String NameOfSecondDirectorWhoSignedDirectorsReport = "NameOfSecondDirectorWhoSignedDirectorsReport";
+    static final String TypeOfIdentificationOfSecondDirectorWhoSignedDirectorsReport = "TypeOfIdentificationOfSecondDirectorWhoSignedDirectorsReport";
+    static final String IdentificationNumberOfSecondDirectorWhoSignedDirectorsReport = "IdentificationNumberOfSecondDirectorWhoSignedDirectorsReport";
+    static final String DisclosureOfStatusOfDividend = "DisclosureOfStatusOfDividend";
+    static final String DisclosureOfContingentOrOtherLiabilityBeingEnforceableWithinTwelveMonthsAfterEndOfFinancialYear = "DisclosureOfContingentOrOtherLiabilityBeingEnforceableWithinTwelveMonthsAfterEndOfFinancialYear";
+    static final String DisclosureOfOccurenceOfAnySubstantialMaterialOrUnusualInNatureItemsTransactionsOrEvents = "DisclosureOfOccurenceOfAnySubstantialMaterialOrUnusualInNatureItemsTransactionsOrEvents";
+    static final String DisclosureOfDirectorsReceivedOrBecomeEntitledToReceiveOtherBenefitsByReasonOfContractMadeByCompanyOrRelatedCorporation = "DisclosureOfDirectorsReceivedOrBecomeEntitledToReceiveOtherBenefitsByReasonOfContractMadeByCompanyOrRelatedCorporation";
+    static final String DateOfSigningDirectorsReport = "DateOfSigningDirectorsReport";
+    static final String DisclosureOfStatementByDirectorsExplanatory = "DisclosureOfStatementByDirectorsExplanatory";
+
+    static final String DisclosureOfDirectorsOpinionThatFinancialStatementsOrConsolidatedFinancialStatementsAreDrawnInAccordanceWithAccountingStandards = "DisclosureOfDirectorsOpinionThatFinancialStatementsOrConsolidatedFinancialStatementsAreDrawnInAccordanceWithAccountingStandards";
+    static final String NumberOfDirectorsSigningStatementByDirectors = "NumberOfDirectorsSigningStatementByDirectors";
+    static final String NameOfFirstDirectorWhoSignedStatementByDirectors = "NameOfFirstDirectorWhoSignedStatementByDirectors";
+    static final String DisclosureWhetherFirstDirectorIsAlsoPrimarilyResponsibleForFinancialManagementOfCompany = "DisclosureWhetherFirstDirectorIsAlsoPrimarilyResponsibleForFinancialManagementOfCompany";
+    static final String TypeOfIdentificationOfFirstDirectorWhoSignedStatementByDirectors = "TypeOfIdentificationOfFirstDirectorWhoSignedStatementByDirectors";
+    static final String IdentificationNumberOfFirstDirectorWhoSignedStatementByDirectors = "IdentificationNumberOfFirstDirectorWhoSignedStatementByDirectors";
+    static final String NameOfSecondDirectorWhoSignedStatementByDirectors = "NameOfSecondDirectorWhoSignedStatementByDirectors";
+    static final String DisclosureWhetherSecondDirectorIsAlsoPrimarilyResponsibleForFinancialManagementOfCompany = "DisclosureWhetherSecondDirectorIsAlsoPrimarilyResponsibleForFinancialManagementOfCompany";
+    static final String TypeOfIdentificationNumberOfSecondDirectorWhoSignedStatementByDirectors = "TypeOfIdentificationNumberOfSecondDirectorWhoSignedStatementByDirectors";
+    static final String IdentificationNumberOfSecondDirectorWhoSignedStatementByDirectors = "IdentificationNumberOfSecondDirectorWhoSignedStatementByDirectors";
+    static final String NameOfOtherPersonPrimarilyResponsibleForFinancialStatementsOfCompany = "NameOfOtherPersonPrimarilyResponsibleForFinancialStatementsOfCompany";
+    static final String TypeOfIdentificationOfOtherPersonPrimarilyResponsibleForFinancialStatementsOfCompany = "TypeOfIdentificationOfOtherPersonPrimarilyResponsibleForFinancialStatementsOfCompany";
+    static final String IdentificationNumberOfOtherPersonPrimarilyResponsibleForFinancialManagementOfCompany = "IdentificationNumberOfOtherPersonPrimarilyResponsibleForFinancialManagementOfCompany";
+    static final String DateOfSigningStatementByDirectors = "DateOfSigningStatementByDirectors";
+    static final String DisclosureOfStatementByDirectorsForBusinessReviewExplanatory = "DisclosureOfStatementByDirectorsForBusinessReviewExplanatory";
+
+    static final String DisclosureOfBusinessReviewEitherOnEnvironmentEmployeesOrSocialAndCommunityIssues = "DisclosureOfBusinessReviewEitherOnEnvironmentEmployeesOrSocialAndCommunityIssues";
+    static final String NumberOfEmployees = "NumberOfEmployees";
+    static final String DisclosureOfAuditorsReportToMembersExplanatory = "DisclosureOfAuditorsReportToMembersExplanatory";
+
+    static final String TypeOfAuditorsOpinion = "TypeOfAuditorsOpinion";
+    static final String DateOfSigningAuditorsReport = "DateOfSigningAuditorsReport";
+    static final String LicenseNumberOfAuditor = "LicenseNumberOfAuditor";
+    static final String RegistrationNumberOfAuditFirm = "RegistrationNumberOfAuditFirm";
+    static final String NameOfAuditFirm = "NameOfAuditFirm";
+    static final String AddressOne = "AddressOne";
+    static final String AddressTwo = "AddressTwo";
+    static final String AddressThree = "AddressThree";
+    static final String PostcodeOfAuditFirm = "PostcodeOfAuditFirm";
+    static final String TownWhereAuditFirmIsLocated = "TownWhereAuditFirmIsLocated";
+    static final String StateWhereAuditFirmIsLocated = "StateWhereAuditFirmIsLocated";
+}

@@ -10,14 +10,6 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 
 public abstract class XMLGenerator {
-//    public static void main(String[] args) {
-//
-//        try {
-//            generateXML();
-//        } catch (TransformerException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     public abstract void generateXML();
 

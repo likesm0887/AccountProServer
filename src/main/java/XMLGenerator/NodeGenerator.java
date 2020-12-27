@@ -28,7 +28,23 @@ public class NodeGenerator {
         return this;
     }
 
-//    public NodeGenerator create
+    public NodeGenerator createElementWithUnitRefDecimal(String tag, String contextRefValue, String unitRefValue, String decimalValue, String nodeValue) {
+        Element element = document.createElement(tag);
+        element.setAttribute("contextRef", contextRefValue);
+        element.setAttribute("unitRef", unitRefValue);
+        element.setAttribute("decimals", decimalValue);
+        element.appendChild(document.createTextNode(nodeValue));
+        root.appendChild(element);
+        return this;
+    }
+
+    public NodeGenerator createElementWithContextRef(String tag, String attributeValue, String nodeValue) {
+        Element element = document.createElement(tag);
+        element.setAttribute("contextRef", attributeValue);
+        element.appendChild(document.createTextNode(nodeValue));
+        root.appendChild(element);
+        return this;
+    }
 
     public NodeGenerator createElementWithAttribute(String tag, String attributeName, String attributeValue, String nodeValue) {
         Element element = document.createElement(tag);
