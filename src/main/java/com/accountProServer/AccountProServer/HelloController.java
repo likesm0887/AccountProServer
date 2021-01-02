@@ -3,6 +3,7 @@ package com.accountProServer.AccountProServer;
 import com.accountProServer.AccountProServer.adapter.InputModel;
 import com.accountProServer.AccountProServer.repository.DocumentRepository;
 import com.accountProServer.AccountProServer.service.DocumentService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -20,13 +22,21 @@ public class HelloController {
     private DocumentService documentService = new DocumentService(documentRepository);
 
     @PostMapping("/InputModel")
-    private String addElement(InputModel inputModel) {
-        documentService.modify(inputModel);
-        return "add" + inputModel.getTagName();
+
+    public  String addElement(@RequestBody String inputModel) {
+        InputModel user2=null;
+        try {
+             user2 = new ObjectMapper().readValue(inputModel, InputModel.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        documentService.modify(user2);
+        return "add" + user2.getTagName();
+
     }
 
     @PostMapping("/InputModels")
-    private String addElement(List<InputModel> inputModel) {
+    public String addElement(List<InputModel> inputModel) {
         inputModel.forEach(input -> documentService.modify(input));
         return "add" + inputModel.get(0).getTagName();
     }

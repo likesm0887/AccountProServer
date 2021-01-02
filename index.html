@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  
+  </head>
+  <body> 
+    
+    <form>
+      請輸入文字：<input type="text" name="CompanyRegistrationNumber" id="test">
+      </form>
+      <input type="button" value="送出" onclick="action()">
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    var attribute =new Object();
+    attribute.name = "123"
+    attribute.data="456"
+
+  var attributestemp=[];
+
+
+  
+  function newBody(){
+    var mybody = new Object();
+   mybody.tagName ='ssmt-dei:CompanyRegistrationNumber',
+   mybody.attributes = attributestemp,
+   mybody.value = document.getElementById('test').value
+   return mybody
+  }
+   
+   
+let url = 'http://127.0.0.1:8080/InputModel/';
+function action(){
+  console.log(JSON.stringify(newBody()))
+  fetch(url, {
+  method: 'POST',
+  // headers 加入 json 格式
+  
+  headers: {
+    'Content-Type': 'application/json;charset=UTF-8',
+    'Accept': 'application/json;charset=UTF-8',
+  },
+  // body 將 json 轉字串送出
+  body: JSON.stringify(newBody()),
+  mode: 'no-cors'
+})}
+    </script>
+</html>
