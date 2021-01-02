@@ -1,4 +1,4 @@
-package com.accountProServer.AccountProServer.Adapter;
+package com.accountProServer.AccountProServer;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

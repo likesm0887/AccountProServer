@@ -21,6 +21,8 @@ dependencies {
 	implementation 'com.google.guava:guava:26.0-jre' // NEW
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testCompile 'junit:junit:4.+'
+	compile group: 'org.dom4j', name: 'dom4j', version: '2.1.0'
+
 }
 
 test {

@@ -1,4 +1,4 @@
-package XMLGenerator;
+package infrastructure.xmlGenerator;
 
 public class CommonNodeTag {
     static final String ssmt_dei = "ssmt-dei:";

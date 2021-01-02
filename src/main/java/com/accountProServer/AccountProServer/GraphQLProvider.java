@@ -1,4 +1,4 @@
-package com.accountProServer.AccountProServer.Adapter;
+package com.accountProServer.AccountProServer;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;

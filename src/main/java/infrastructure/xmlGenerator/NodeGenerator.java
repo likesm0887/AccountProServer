@@ -1,4 +1,4 @@
-package XMLGenerator;
+package infrastructure.xmlGenerator;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -18,7 +18,7 @@ public class NodeGenerator {
         root.setAttribute("xmlns:link", "http://www.w3.org/1999/xlink");
         root.setAttribute("xmlns:iso4217", "http://www.xbrl.org/2003/iso4217");
         root.setAttribute("xmlns:xbrldi", "http://xbrl.org/2006/xbrldi");
-        root.setAttribute("xmlns:ssmt-dei", "http://xbrl.ssm.com.my/taxonomy/2017-12-31/ssmt-dei-core");
+        root.setAttribute("xmlns:ssmt-dei", "http://xbrl.ssm.com.my/taxonomy/2017-12-31/ssmt-dei-domain");
         root.setAttribute("xmlns:ssmt-dei-ee-mfrs", "http://xbrl.ssm.com.my/taxonomy/2017-12-31/ssmt-dei-ee-mfrs");
         root.setAttribute("xmlns:ifrs-full", "http://xbrl.ifrs.org/taxonomy/2017-03-09/ifrs-full");
         root.setAttribute("xmlns:ssmt", "http://xbrl.ssm.com.my/taxonomy/2017-12-31/ssmt-cor");
@@ -53,6 +53,14 @@ public class NodeGenerator {
         root.appendChild(element);
         return this;
     }
+    public NodeGenerator createElement(String tag){
+        Element element = document.createElement(tag);
+        root.appendChild(element);
+        return this;
+
+
+    }
+
 
     public Document build() {
         return document;

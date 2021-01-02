@@ -1,4 +1,4 @@
-package XMLGenerator;
+package infrastructure.xmlGenerator;
 
 import org.junit.Test;
 

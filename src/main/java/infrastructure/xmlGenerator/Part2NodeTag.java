@@ -1,4 +1,4 @@
-package XMLGenerator;
+package infrastructure.xmlGenerator;
 
 public class Part2NodeTag {
     static final String CompanyRegistrationNumber = "CompanyRegistrationNumber";
