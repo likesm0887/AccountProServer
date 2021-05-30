@@ -1065,7 +1065,7 @@
   <xbrli:unit id="share"> 
     <xbrli:measure>xbrli:shares</xbrli:measure> 
   </xbrli:unit>  
-  <ssmt-dei:CompanyRegistrationNumber contextRef="fromto_20170401_20180331">1609600978540</ssmt-dei:CompanyRegistrationNumber>  
+  <ssmt-dei:CompanyRegistrationNumber contextRef="fromto_20170401_20180331">accountpro</ssmt-dei:CompanyRegistrationNumber>  
   <ssmt-dei:NameOfReportingEntity contextRef="fromto_20170401_20180331">AQIL MEDIC SDN BHD</ssmt-dei:NameOfReportingEntity>  
   <ssmt-dei:FormerNameOfCompany contextRef="fromto_20170401_20180331">NUTRICOMPASS SDN BHD</ssmt-dei:FormerNameOfCompany>  
   <ssmt-dei:OriginOfCompany contextRef="fromto_20170401_20180331">Incorporated in Malaysia</ssmt-dei:OriginOfCompany>  
